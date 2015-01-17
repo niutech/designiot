@@ -31,9 +31,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb" >
 	<head>
 		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
-		<title>一步步搭建物联网系统</title>
-		<meta name="keywords" content="设计物联网系统,物联网系统设计">
-		<meta name="description" content="一份关于如何设计物联网系统的文档">
+		<title>Step by step guide to building the Internet of Things system</title>
+		<meta name="keywords" content="Internet of Things system design">
+		<meta name="description" content="A document on how to design the Internet of Things system">
 		<link rel="stylesheet" href="css/vendor.css" />
 	</head>
 	<body class="container inner wrap">
@@ -41,18 +41,18 @@ code > span.er { color: #ff0000; font-weight: bold; }
 		<table>
 			<tr>
 				<td>
-					<iframe src="http://ghbtns.com/github-btn.html?user=phodal&repo=designiot&type=watch&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true"></iframe>
+					<iframe src="http://ghbtns.com/github-btn.html?user=niutech&repo=designiot&type=watch&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true"></iframe>
 				</td>
 				<td>
-					<iframe src="http://ghbtns.com/github-btn.html?user=phodal&repo=designiot&type=fork&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true"></iframe>
+					<iframe src="http://ghbtns.com/github-btn.html?user=niutech&repo=designiot&type=fork&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true"></iframe>
 				</td>
 				<td>
-					<iframe src="http://ghbtns.com/github-btn.html?user=phodal&type=follow&count=true&size=large" height="30" width="240" frameborder="0" scrolling="0" style="width:240px; height: 30px;" allowTransparency="true"></iframe>
+					<iframe src="http://ghbtns.com/github-btn.html?user=niutech&type=follow&count=true&size=large" height="30" width="240" frameborder="0" scrolling="0" style="width:240px; height: 30px;" allowTransparency="true"></iframe>
 				</td>
 			</tr>
 		</table>
-		<h1>一步步搭建物联网系统</h1>
-		源自毕业论文:<a href="http://designiot.phodal.com/iot.html" title="基于REST服务的最小物联网系统设计">基于REST服务的最小物联网系统设计</a>
+		<h1>Step by step guide to building the Internet of Things system</h1>
+		From graduate thesis: <a href="http://designiot.phodal.com/iot.html" title="Design of REST-based Internet of Things services">Design of REST-based Internet of Things services</a>
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -65,102 +65,102 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </html>
 <div id="TOC">
 <ul>
-<li><a href="#前言"><span class="toc-section-number">1</span> 前言</a><ul>
-<li><a href="#目标读者"><span class="toc-section-number">1.1</span> 目标读者</a></li>
-<li><a href="#不适合人群"><span class="toc-section-number">1.2</span> 不适合人群</a></li>
-<li><a href="#介绍"><span class="toc-section-number">1.3</span> 介绍</a><ul>
-<li><a href="#为什么没有c"><span class="toc-section-number">1.3.1</span> 为什么没有C ?</a></li>
-<li><a href="#为什么不是java"><span class="toc-section-number">1.3.2</span> 为什么不是JAVA ?</a></li>
+<li><a href="#前言"><span class="toc-section-number">1</span> Introduction</a><ul>
+<li><a href="#目标读者"><span class="toc-section-number">1.1</span> Audience</a></li>
+<li><a href="#不适合人群"><span class="toc-section-number">1.2</span> Restrictions</a></li>
+<li><a href="#介绍"><span class="toc-section-number">1.3</span> Introduction</a><ul>
+<li><a href="#为什么没有c"><span class="toc-section-number">1.3.1</span> Why not C?</a></li>
+<li><a href="#为什么不是java"><span class="toc-section-number">1.3.2</span> Why not JAVA?</a></li>
 </ul></li>
-<li><a href="#如何阅读"><span class="toc-section-number">1.4</span> 如何阅读</a></li>
+<li><a href="#如何阅读"><span class="toc-section-number">1.4</span> How to read</a></li>
 </ul></li>
-<li><a href="#无处不在的html"><span class="toc-section-number">2</span> 无处不在的HTML</a><ul>
-<li><a href="#html的helloworld"><span class="toc-section-number">2.1</span> html的hello,world</a><ul>
-<li><a href="#调试helloworld"><span class="toc-section-number">2.1.1</span> 调试hello,world</a></li>
-<li><a href="#说说helloworld"><span class="toc-section-number">2.1.2</span> 说说hello,world</a></li>
-<li><a href="#想用中文"><span class="toc-section-number">2.1.3</span> 想用中文？</a></li>
+<li><a href="#无处不在的html"><span class="toc-section-number">2</span> Ubiquitous HTML</a><ul>
+<li><a href="#html的helloworld"><span class="toc-section-number">2.1</span> Hello, world in HTML</a><ul>
+<li><a href="#调试helloworld"><span class="toc-section-number">2.1.1</span> Debugging Hello, world</a></li>
+<li><a href="#说说helloworld"><span class="toc-section-number">2.1.2</span> Saying Hello,world</a></li>
+<li><a href="#想用中文"><span class="toc-section-number">2.1.3</span> Would you like to use Chinese?</a></li>
 </ul></li>
-<li><a href="#其他html标记"><span class="toc-section-number">2.2</span> 其他html标记</a><ul>
-<li><a href="#美妙之处"><span class="toc-section-number">2.2.1</span> 美妙之处</a></li>
-<li><a href="#更多"><span class="toc-section-number">2.2.2</span> 更多</a></li>
+<li><a href="#其他html标记"><span class="toc-section-number">2.2</span> Other HTML tags</a><ul>
+<li><a href="#美妙之处"><span class="toc-section-number">2.2.1</span> Its beauty</a></li>
+<li><a href="#更多"><span class="toc-section-number">2.2.2</span> More</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#无处不在的javascript"><span class="toc-section-number">3</span> 无处不在的Javascript</a><ul>
-<li><a href="#javascript的helloworld"><span class="toc-section-number">3.1</span> Javascript的Hello,world</a></li>
-<li><a href="#更js一点"><span class="toc-section-number">3.2</span> 更js一点</a><ul>
-<li><a href="#从数学出发"><span class="toc-section-number">3.2.1</span> 从数学出发</a></li>
+<li><a href="#无处不在的javascript"><span class="toc-section-number">3</span> Ubiquitous Javascript</a><ul>
+<li><a href="#javascript的helloworld"><span class="toc-section-number">3.1</span> Hello, world in JavaScript</a></li>
+<li><a href="#更js一点"><span class="toc-section-number">3.2</span> A little more JS</a><ul>
+<li><a href="#从数学出发"><span class="toc-section-number">3.2.1</span> Starting from math</a></li>
 </ul></li>
-<li><a href="#设计和编程"><span class="toc-section-number">3.3</span> 设计和编程</a><ul>
-<li><a href="#函数"><span class="toc-section-number">3.3.1</span> 函数</a></li>
-<li><a href="#重新设计"><span class="toc-section-number">3.3.2</span> 重新设计</a></li>
-<li><a href="#object和函数"><span class="toc-section-number">3.3.3</span> object和函数</a></li>
-<li><a href="#面向对象"><span class="toc-section-number">3.3.4</span> 面向对象</a></li>
+<li><a href="#设计和编程"><span class="toc-section-number">3.3</span> Design and Programming</a><ul>
+<li><a href="#函数"><span class="toc-section-number">3.3.1</span> Functions</a></li>
+<li><a href="#重新设计"><span class="toc-section-number">3.3.2</span> Redesign</a></li>
+<li><a href="#object和函数"><span class="toc-section-number">3.3.3</span> Objects and functions</a></li>
+<li><a href="#面向对象"><span class="toc-section-number">3.3.4</span> Object-oriented programming</a></li>
 </ul></li>
-<li><a href="#其他"><span class="toc-section-number">3.4</span> 其他</a></li>
-<li><a href="#美妙之处-1"><span class="toc-section-number">3.5</span> 美妙之处</a></li>
+<li><a href="#其他"><span class="toc-section-number">3.4</span> More</a></li>
+<li><a href="#美妙之处-1"><span class="toc-section-number">3.5</span> Its beauty</a></li>
 </ul></li>
-<li><a href="#无处不在的css"><span class="toc-section-number">4</span> 无处不在的CSS</a><ul>
+<li><a href="#无处不在的css"><span class="toc-section-number">4</span> Ubiquitous CSS</a><ul>
 <li><a href="#css"><span class="toc-section-number">4.1</span> CSS</a></li>
-<li><a href="#关于css"><span class="toc-section-number">4.2</span> 关于CSS</a></li>
-<li><a href="#代码结构"><span class="toc-section-number">4.3</span> 代码结构</a></li>
-<li><a href="#样式与目标"><span class="toc-section-number">4.4</span> 样式与目标</a><ul>
-<li><a href="#选择器"><span class="toc-section-number">4.4.1</span> 选择器</a></li>
+<li><a href="#关于css"><span class="toc-section-number">4.2</span> About CSS</a></li>
+<li><a href="#代码结构"><span class="toc-section-number">4.3</span> Code structure</a></li>
+<li><a href="#样式与目标"><span class="toc-section-number">4.4</span> Style and objectives</a><ul>
+<li><a href="#选择器"><span class="toc-section-number">4.4.1</span> Selectors</a></li>
 </ul></li>
-<li><a href="#更有趣的css"><span class="toc-section-number">4.5</span> 更有趣的CSS</a></li>
+<li><a href="#更有趣的css"><span class="toc-section-number">4.5</span> More interesting CSS</a></li>
 </ul></li>
-<li><a href="#无处不在的三剑客"><span class="toc-section-number">5</span> 无处不在的三剑客</a><ul>
-<li><a href="#hellogeek"><span class="toc-section-number">5.1</span> Hello,Geek</a></li>
-<li><a href="#从源码学习"><span class="toc-section-number">5.2</span> 从源码学习</a></li>
-<li><a href="#浏览器渲染过程"><span class="toc-section-number">5.3</span> 浏览器渲染过程</a><ul>
+<li><a href="#无处不在的三剑客"><span class="toc-section-number">5</span> Ubiquitous Three Musketeers</a><ul>
+<li><a href="#hellogeek"><span class="toc-section-number">5.1</span> Hello, Geek</a></li>
+<li><a href="#从源码学习"><span class="toc-section-number">5.2</span> Learning from source</a></li>
+<li><a href="#浏览器渲染过程"><span class="toc-section-number">5.3</span> Browser rendering process</a><ul>
 <li><a href="#html"><span class="toc-section-number">5.3.1</span> HTML</a></li>
 </ul></li>
-<li><a href="#dom树形结构图"><span class="toc-section-number">5.4</span> DOM树形结构图</a><ul>
-<li><a href="#javascript"><span class="toc-section-number">5.4.1</span> javascript</a></li>
+<li><a href="#dom树形结构图"><span class="toc-section-number">5.4</span> DOM tree structure diagram</a><ul>
+<li><a href="#javascript"><span class="toc-section-number">5.4.1</span> JavaScript</a></li>
 <li><a href="#css-1"><span class="toc-section-number">5.4.2</span> CSS</a></li>
 </ul></li>
-<li><a href="#css盒模型图"><span class="toc-section-number">5.5</span> CSS盒模型图</a></li>
-<li><a href="#笔记"><span class="toc-section-number">5.6</span> 笔记</a></li>
+<li><a href="#css盒模型图"><span class="toc-section-number">5.5</span> CSS box model diagram</a></li>
+<li><a href="#笔记"><span class="toc-section-number">5.6</span> Notes</a></li>
 </ul></li>
-<li><a href="#gnulinux-强大且free"><span class="toc-section-number">6</span> GNU/Linux 强大且Free</a><ul>
-<li><a href="#什么是linux"><span class="toc-section-number">6.1</span> 什么是Linux</a></li>
-<li><a href="#操作系统"><span class="toc-section-number">6.2</span> 操作系统</a><ul>
-<li><a href="#linux架构图"><span class="toc-section-number">6.2.1</span> Linux架构图</a></li>
+<li><a href="#gnulinux-强大且free"><span class="toc-section-number">6</span> GNU/Linux Powerful and Free</a><ul>
+<li><a href="#什么是linux"><span class="toc-section-number">6.1</span> What is Linux</a></li>
+<li><a href="#操作系统"><span class="toc-section-number">6.2</span> Operating System</a><ul>
+<li><a href="#linux架构图"><span class="toc-section-number">6.2.1</span> Linux Chart</a></li>
 <li><a href="#shell"><span class="toc-section-number">6.2.2</span> Shell</a></li>
 <li><a href="#gcc"><span class="toc-section-number">6.2.3</span> GCC</a></li>
-<li><a href="#启动引导程序"><span class="toc-section-number">6.2.4</span> 启动引导程序</a></li>
+<li><a href="#启动引导程序"><span class="toc-section-number">6.2.4</span> Bootloader</a></li>
 </ul></li>
-<li><a href="#从编译开始"><span class="toc-section-number">6.3</span> 从编译开始</a><ul>
-<li><a href="#开始之前"><span class="toc-section-number">6.3.1</span> 开始之前</a></li>
-<li><a href="#编译nginx"><span class="toc-section-number">6.3.2</span> 编译Nginx</a></li>
-<li><a href="#其他-1"><span class="toc-section-number">6.3.3</span> 其他</a></li>
+<li><a href="#从编译开始"><span class="toc-section-number">6.3</span> Compile from the start</a><ul>
+<li><a href="#开始之前"><span class="toc-section-number">6.3.1</span> Before you begin</a></li>
+<li><a href="#编译nginx"><span class="toc-section-number">6.3.2</span> Compile Nginx</a></li>
+<li><a href="#其他-1"><span class="toc-section-number">6.3.3</span> Other</a></li>
 </ul></li>
-<li><a href="#包管理"><span class="toc-section-number">6.4</span> 包管理</a></li>
+<li><a href="#包管理"><span class="toc-section-number">6.4</span> Package management</a></li>
 <li><a href="#ubuntu-lnmp"><span class="toc-section-number">6.5</span> Ubuntu LNMP</a><ul>
-<li><a href="#update软件包列表"><span class="toc-section-number">6.5.1</span> Update软件包列表</a></li>
-<li><a href="#安装mysql"><span class="toc-section-number">6.5.2</span> 安装MySQL</a></li>
-<li><a href="#安装nginx"><span class="toc-section-number">6.5.3</span> 安装Nginx</a></li>
-<li><a href="#安装php"><span class="toc-section-number">6.5.4</span> 安装PHP</a></li>
+<li><a href="#update软件包列表"><span class="toc-section-number">6.5.1</span> Update package list</a></li>
+<li><a href="#安装mysql"><span class="toc-section-number">6.5.2</span> Install MySQL</a></li>
+<li><a href="#安装nginx"><span class="toc-section-number">6.5.3</span> Install Nginx</a></li>
+<li><a href="#安装php"><span class="toc-section-number">6.5.4</span> Install PHP</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#arduino-极客的玩具"><span class="toc-section-number">7</span> Arduino 极客的玩具</a><ul>
-<li><a href="#极客的玩具"><span class="toc-section-number">7.1</span> 极客的玩具</a></li>
-<li><a href="#硬件熟悉"><span class="toc-section-number">7.2</span> 硬件熟悉</a></li>
-<li><a href="#开发环境"><span class="toc-section-number">7.3</span> 开发环境</a></li>
-<li><a href="#点亮一个led"><span class="toc-section-number">7.4</span> 点亮一个LED</a></li>
-<li><a href="#串口通信"><span class="toc-section-number">7.5</span> 串口通信</a><ul>
-<li><a href="#关于arduino-setup"><span class="toc-section-number">7.5.1</span> 关于Arduino Setup()</a></li>
+<li><a href="#arduino-极客的玩具"><span class="toc-section-number">7</span> Arduino geek toys</a><ul>
+<li><a href="#极客的玩具"><span class="toc-section-number">7.1</span> Geek toys</a></li>
+<li><a href="#硬件熟悉"><span class="toc-section-number">7.2</span> Familiar hardware </a></li>
+<li><a href="#开发环境"><span class="toc-section-number">7.3</span> Development environment</a></li>
+<li><a href="#点亮一个led"><span class="toc-section-number">7.4</span> Light a LED</a></li>
+<li><a href="#串口通信"><span class="toc-section-number">7.5</span> Serial communication</a><ul>
+<li><a href="#关于arduino-setup"><span class="toc-section-number">7.5.1</span> About Arduino setup()</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#python-代码如散文"><span class="toc-section-number">8</span> Python 代码如散文</a><ul>
-<li><a href="#代码与散文"><span class="toc-section-number">8.1</span> 代码与散文</a><ul>
-<li><a href="#开始之前-1"><span class="toc-section-number">8.1.1</span> 开始之前</a></li>
-<li><a href="#python的helloworld"><span class="toc-section-number">8.1.2</span> Python的Hello,World</a></li>
-<li><a href="#我们想要的helloworld"><span class="toc-section-number">8.1.3</span> 我们想要的Hello,World</a></li>
+<li><a href="#python-代码如散文"><span class="toc-section-number">8</span> Python code like prose</a><ul>
+<li><a href="#代码与散文"><span class="toc-section-number">8.1</span> Code and prose</a><ul>
+<li><a href="#开始之前-1"><span class="toc-section-number">8.1.1</span> Before you begin</a></li>
+<li><a href="#python的helloworld"><span class="toc-section-number">8.1.2</span> Hello, world in Python</a></li>
+<li><a href="#我们想要的helloworld"><span class="toc-section-number">8.1.3</span> We want Hello, World</a></li>
 </ul></li>
-<li><a href="#算法"><span class="toc-section-number">8.2</span> 算法</a></li>
-<li><a href="#实用主义哲学"><span class="toc-section-number">8.3</span> 实用主义哲学</a></li>
-<li><a href="#包管理-1"><span class="toc-section-number">8.4</span> 包管理</a><ul>
-<li><a href="#python-requests"><span class="toc-section-number">8.4.1</span> python requests</a></li>
+<li><a href="#算法"><span class="toc-section-number">8.2</span> Algorithms</a></li>
+<li><a href="#实用主义哲学"><span class="toc-section-number">8.3</span> Pragmatism</a></li>
+<li><a href="#包管理-1"><span class="toc-section-number">8.4</span> Package management</a><ul>
+<li><a href="#python-requests"><span class="toc-section-number">8.4.1</span> Python requests</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#raspberry-pi"><span class="toc-section-number">9</span> Raspberry Pi</a><ul>
