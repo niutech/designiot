@@ -1,7 +1,7 @@
 
-##《[Step by step guide to building the Internet of Things system](https://translate.googleusercontent.com/translate_c?langpair=auto%7Cen&sandbox=0&u=http://designiot.phodal.com/)》
+##[Step by step guide to building the Internet of Things system](http://niutech.github.io/designiot/)
 
-**View online**: [Step by step guide to building the Internet of Things system](https://translate.googleusercontent.com/translate_c?langpair=auto%7Cen&sandbox=0&u=http://designiot.phodal.com/)
+**View online**: [Step by step guide to building the Internet of Things system](http://niutech.github.io/designiot/)
 
 Turing - the e-book version of [Step by step guide to building the Internet of Things system](https://translate.googleusercontent.com/translate_c?langpair=auto%7Cen&sandbox=0&u=http://www.ituring.com.cn/book/1580)
 
