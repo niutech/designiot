@@ -1,26 +1,26 @@
 
-##《[一步步搭建物联网系统](http://designiot.phodal.com/)》
+##《[Step by step guide to building the Internet of Things system](https://translate.googleusercontent.com/translate_c?langpair=auto%7Cen&sandbox=0&u=http://designiot.phodal.com/)》
 
-**在线查看**:[一步步搭建物联网系统](http://designiot.phodal.com/)
+**View online**: [Step by step guide to building the Internet of Things system](https://translate.googleusercontent.com/translate_c?langpair=auto%7Cen&sandbox=0&u=http://designiot.phodal.com/)
 
-图灵-电子书版[一步步搭建物联网系统](http://www.ituring.com.cn/book/1580)
+Turing - the e-book version of [Step by step guide to building the Internet of Things system](https://translate.googleusercontent.com/translate_c?langpair=auto%7Cen&sandbox=0&u=http://www.ituring.com.cn/book/1580)
 
 
-##其他相关
+##Other related
 
-[IOT CoAP](https://github.com/phodal/iot-coap)
+[IoT CoAP](https://github.com/phodal/iot-coap)
 
-[物联网资料合集](https://github.com/phodal/collection-iot)
+[IoT Collection](https://github.com/niutech/collection-iot)
 
-[最小物联网系统](https://github.com/phodal/iot)
+[IoT Minimal System](https://github.com/phodal/iot)
 
-[吊兰-MQTT协议,CoAP协议,WebSocket,物联网协议在线测试](http://mqtt.phodal.com)
+[Chlorophytum - MQTT, CoAP, WebSocket networking protocols online testing platform](https://translate.googleusercontent.com/translate_c?langpair=auto%7Cen&sandbox=0&u=http://mqtt.phodal.com/)
 
-###交流
+###Exchange
 
-QQ群：348100589
+QQ group：348100589
 
-##作者名单 
+##Authors 
 
 Github | Name
 |--------| ---------|
@@ -28,17 +28,16 @@ Github | Name
 [Lboyve](https://github.com/Lboyve) | Fortware
 
 
-##反馈
+##Feedback
 
-任何反馈对于我们来说都是很重要的。
+Any feedback is very important to up.
 
-联系我提出反馈意见: [h@phodal.com](h@phodal.com)
+Contact me at: [h@phodal.com](h@phodal.com)
 
-## License
+##License
 
 ![cc](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
 
-本作品采用[知识共享署名-非商业性使用 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc/4.0/)进行许可。
+This work is licensed under [Creative Commons Attribution-NonCommercial 4.0 International License Agreement](http://creativecommons.org/licenses/by-nc/4.0/).
 
-© 2014 [Phodal Huang](http://www.phodal.com). 
-
+© 2014 [Phodal Huang](http://www.phodal.com). Translated by [Jerzy Głowacki](https://github.com/niutech).
